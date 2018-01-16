@@ -2,12 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//class is an object classification
-//you must have open and closed () per obeject
-public class FirstScript : MonoBehaviour {
+public class Secondscript : MonoBehaviour {
 
-
-//Void is a function that is void or empty or null
 	// Use this for initialization
 	void Start () {
 		
