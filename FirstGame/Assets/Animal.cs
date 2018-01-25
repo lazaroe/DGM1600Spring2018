@@ -6,28 +6,21 @@ public class Animal : MonoBehaviour {
 
 	// Use this for initialization
     //this declares what start will do
-	void Start () {
-        print("my animal is eating.");
-        print("now my animal is sleeping.");
-        print("I love my dog");
+        public string Name;
+        public int foodCount;
+
+        void OnMouseDown()
+        {
+            print("The" + Name + "ate my homework");
+            print("The" + Name + " only has" + foodCount + "amount of food");
+        }
 	}
 
-    void OnMouseDown()
-    {
-        Start();
-        print("Woof");
-    }
-	// Update is called once per frame
-	void Update () {
-		
-	}
-}
 
 
-//Today in class we made a big emphasis on Class and on Voids
-//Class is what we could call the big box or the object that we can store things in, class would be animal and the voids is what go inside that
-//Void is the "little boxes" or the functions that can make a command, if you make a prescript before hand to signify the type of action you want the void will enable you after typing a follow up comman such as start to get you the wanted reaction
-//; this is what comes at the end of any coding sentence, this finishes the command.
-//we talked about how this is the set up of a function and that anything else beyond this point consists of this, the only big thing we need to remember aside from this is just other words.
-// using these you create notes that won't show up.
-//you can also code commands to make sure that a type of call can give a spicific reaction.
+//Today in class we talked about Variables which are in essence boxes that contain information.
+//We see that the format to this equation is much like this, you insert TYPE NAMEOFVARIABLE = Value; this give sour variables value in the game
+//you can also create temporary variables that can add on to the original variable to complete a task..
+//We talked about the meaing of integers or Int. we talked about how they are whole numbers.
+//We talked about Floats and how they aren't whole numbers, an example would be like 1.1
+//We learned how scripts and variables can be used for any object, you can reuse any script while yet having each object have thier own unique characteristics
