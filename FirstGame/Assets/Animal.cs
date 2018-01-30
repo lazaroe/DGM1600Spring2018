@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour {
 
-	// Use this for initialization
-    //this declares what start will do
-        public string Name;
-        public int foodCount;
+	public bool key = false;
+    public bool amo = false;
 
-        void OnMouseDown()
+    void OnMouseDown()
         {
-            print("The" + Name + "ate my homework");
-            print("The" + Name + " only has" + foodCount + "amount of food");
+            if(key == true){
+                print("Open Door");
+            }
+            if(amo == true){
+                print("Shoot");
+            }
         }
 	}
 
 
 
-//Today in class we talked about Variables which are in essence boxes that contain information.
-//We see that the format to this equation is much like this, you insert TYPE NAMEOFVARIABLE = Value; this give sour variables value in the game
-//you can also create temporary variables that can add on to the original variable to complete a task..
-//We talked about the meaing of integers or Int. we talked about how they are whole numbers.
-//We talked about Floats and how they aren't whole numbers, an example would be like 1.1
-//We learned how scripts and variables can be used for any object, you can reuse any script while yet having each object have thier own unique characteristics
+//If statements just signify that if the content inside it is true then it is qualified to give a certain fuction or reaction
+//You showed us what it means to have a double == which is really to compare
+//you can check if something is false,  simply by putting a != meaning that anythign you select that is not a cat will meow
+//We made 3 if statements in class, we discussed how we can make it so that we can interact with objects with if statements
+//Bool is a swtich statement, its on or off.
