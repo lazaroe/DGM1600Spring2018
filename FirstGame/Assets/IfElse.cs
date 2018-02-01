@@ -49,3 +49,4 @@ public class IfElse : MonoBehaviour {
 //>= greater than
 //<=less than
 //Switches are for more than two choices. If statements are for only 2 choices.
+//
