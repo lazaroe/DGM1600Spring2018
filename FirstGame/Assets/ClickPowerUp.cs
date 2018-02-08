@@ -5,11 +5,10 @@ using UnityEngine;
 public class ClickPowerUp : MonoBehaviour {
 
 	public PowerUp MyPowerUp;
-	void OnMouseDown ()
+
+	void OnMouseDown()
 	{
-		if(MyPowerUp.Name == "Health")
-		{
-			print("Ihave the POWER!!")
-		}
+		//dp work
+		MyPowerUp.RunPowerUp();
 	}
 }
