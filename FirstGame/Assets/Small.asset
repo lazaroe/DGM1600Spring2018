@@ -9,7 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3397ca67c63a4c5419572138420fbb07, type: 3}
-  m_Name: PowerUp
+  m_Name: Small
   m_EditorClassIdentifier: 
-  PowerLevel: 100
+  PowerLevel: 10
+  CurrentPlayer: {fileID: 11400000, guid: 3bb72a43b8719ad49bf77da06aa3999d, type: 2}
   Name: Health
