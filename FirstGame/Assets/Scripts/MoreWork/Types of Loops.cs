@@ -7,7 +7,7 @@ public class ForLoop : MonoBehaviour
     int numEnemies = 3;
 	int cupsInTheSink = 4;
     
-    
+     
     void Start () {
     {
         
@@ -22,7 +22,7 @@ public class ForLoop : MonoBehaviour
             cupsInTheSink--;
         }
 		bool shouldContinue = false;
-        
+          
         do
         {
             print ("Hello World");
@@ -47,3 +47,4 @@ public class ForLoop : MonoBehaviour
 //counting will beguin with zero
 //foreach group. It is good for valuaring arrays. goes through a collection item by item until the end by which it stiops
 //you cannot alter the behavior with a foreach loop.
+//Loops are good for repeating
