@@ -19,3 +19,5 @@ public class PowerUp : ScriptableObject {
 // you place ; only if you are going to assign it to do something
 //Debug means find and Log menas report
 // CreateAssetMenu will enable you to make it an asset that you can utilize and maniupalte differently
+//Monobehaviours can be applied to any object
+//Scriptable objects are manipulated in game.
