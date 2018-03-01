@@ -1,33 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class Loops : MonoBehaviour {
-	public string[] Keys;
+//public class Loops : MonoBehaviour {
+	//public string[] Keys;
 
 	// Use this for initialization
-	void Start () 
-	{
-			Run();
+	//void Start () 
+	//{
+			//Run();
 
-			private void Update()
-			{
-				if (Input.GetKeyDown(KeyCode.Space))
-				{
-					Run();
-				}
-			}
-	void Run()
-		{
-		for (int i = 0; i < Keys.Length; i++)
-		{
-			if (Keys[i] == "Add Ammo")
-			{
-				print (Keys[i]);
-			}
-		}
-	}
-}
-}
+			//private void Update()
+		//	{
+				//if (Input.GetKeyDown(KeyCode.Space))
+			//	{
+				//	Run();
+			//	}
+		//	}
+	//void Run()
+	//	{
+		//for (int i = 0; i < Keys.Length; i++)
+	//	{
+		///	if (Keys[i] == "Add Ammo")
+		//	{
+			//	print (Keys[i]);
+		//	}
+	//	}
+	//}
+//}
+//}
 //for (); loops are just a pattern. It means that the work will continue to loop
 //for loops are loops that can be specified. You declare I=0 
 //scriptable objects can be saved.

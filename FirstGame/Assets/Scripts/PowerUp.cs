@@ -4,15 +4,7 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class PowerUp : ScriptableObject {
-	public int PowerLevel = 10;
-	public Player CurrentPlayer; 
-	public void RunPowerUp ()
-	{
-		//Adds Value
-		CurrentPlayer.Score += PowerLevel;
-	}
-	public string Name = "Health";
-
+	public int PowerLevel;
 }
 
 //Scriptable objects downsize the mass of the file, Monobehaviour is a bigger box. Mono can be used as scriptable objects on unity.

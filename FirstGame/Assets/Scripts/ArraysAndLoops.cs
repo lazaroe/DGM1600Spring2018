@@ -2,38 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArraysAndLoops : MonoBehaviour {
+//public class ArraysAndLoops : MonoBehaviour {
 
-	public Player[] Players;
-	public int[] HighScores;
-	public PowerUp[] PowerUps;
-	public bool[] Keys;
+	//public Player[] Players;
+	//public int[] HighScores;
+	//public PowerUp[] PowerUps;
+//	public bool[] Keys;
 
 	// Use this for initialization
-	void OnMouseDown () {
-		foreach (var player in Players)
-		{
-			print(player.PlayerName);
-			print (player.Score);
-			print (player.MPs);
-		}
+	//void OnMouseDown () {
+		//foreach (var player in Players)
+	//	{
+		//	print(player.PlayerName);
+		//	print (player.Score);
+			//print (player.MPs);
+		//}
 
-		foreach (var score in HighScores)
-		{
-			if(score >= 1000)
-			{
-				print(score);
-			}
-		}
-		foreach (var key in Keys)
-		{
-			if(key == true)
-			{
-				print(key);
-			}
-		}
-	}
-}
+		//foreach (var score in HighScores)
+		//{
+		//	if(score >= 1000)
+		//	{
+			//	print(score);
+		//	}
+		//}
+		//foreach (var key in Keys)
+		//{
+		//	if(key == true)
+		//	{
+			//	print(key);
+		//	}
+	//	}
+//	}
+//}
 
 
 // An array is like a fence post with slats. The don't have to contain the same data. But they do contain the same data type.

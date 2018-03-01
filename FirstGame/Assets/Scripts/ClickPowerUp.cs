@@ -9,6 +9,6 @@ public class ClickPowerUp : MonoBehaviour {
 	void OnMouseDown()
 	{
 		//dp work
-		MyPowerUp.RunPowerUp();
+		//MyPowerUp.RunPowerUp();
 	}
 }
