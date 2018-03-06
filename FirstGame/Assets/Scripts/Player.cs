@@ -9,5 +9,5 @@ public class Player : ScriptableObject {
 	public string PlayerName;
 	public int Score;
 	public int MPs;
-
+    internal int Health;
 }
