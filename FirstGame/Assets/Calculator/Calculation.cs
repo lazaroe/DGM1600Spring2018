@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
-public class Calculation : ScriptableObject {
-	public int Calculate(string a, string b)
-	{
-		int aNum = int.Parse(a);
-		int bNum = int.Parse(b);
-		return aNum + bNum;
-	}
-
+public abstract class Calculation : ScriptableObject 
+{
+	public float aNum;
+	public float bNum;
+	public abstract float Calculate(string a, string b);
 }
-//scriptable objects don't use start or updates only monobehaviours
-//parse means to convert
+
+//abstract means that it is open for interpritation
