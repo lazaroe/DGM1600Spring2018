@@ -4,10 +4,9 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class Multiply : Calculation {
-	public override float Calculate (string a, string b)
+	public override string FinishCalculation()
 	{
-		aNum = float.Parse(a);
-		bNum = float.Parse(b);
-		return  aNum * bNum;
+		return (aNum * bNum).ToString();
 	}
+
 }

@@ -4,13 +4,13 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class Add : Calculation {
-	public override float Calculate(string a, string b)
+	public override string FinishCalculation()
 	{
-		aNum = float.Parse(a);
-		bNum = float.Parse(b);
-		return aNum + bNum;
+		return (aNum + bNum).ToString();
 	}
 
 }
 //scriptable objects don't use start or updates only monobehaviours
 //parse means to convert
+//override means that we are going to replace whatever was there.
+//public, private, protected. protected means 
