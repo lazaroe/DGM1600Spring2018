@@ -58,8 +58,6 @@ public class FunctionsAndParameters : MonoBehaviour {
 	{
 		if (true)
 		print("pause the game");
-		else
-		print ("continue");
 	}
 	void OnMouseDown()
 	{
