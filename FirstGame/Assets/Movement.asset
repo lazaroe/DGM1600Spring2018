@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Movement
   m_EditorClassIdentifier: 
   speed: 6
-  jumpSpeed: 20
-  gravity: 15
+  jumpSpeed: 8
+  gravity: 20
   InputX: {fileID: 0}
-  InputY: {fileID: 11400000, guid: 718c2d7f40de87049b0880975b405038, type: 2}
+  InputY: {fileID: 0}
   InputZ: {fileID: 0}

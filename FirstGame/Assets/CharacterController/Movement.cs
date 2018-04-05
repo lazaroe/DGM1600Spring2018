@@ -18,9 +18,9 @@ public class Movement : ScriptableObject {
     public void Move(CharacterController controller, Transform transform)
     {
         if (controller.isGrounded) {
-			moveDirection.x = InputX.SetFloat();
-			moveDirection.y = InputY.SetFloat();
-            moveDirection.z = InputZ.SetFloat();
+			moveDirection.x = Input.GetAxis("Horizontal");
+			moveDirection.y = Input.GetAxis("Vertical");
+            moveDirection.z = 0;
 			
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;

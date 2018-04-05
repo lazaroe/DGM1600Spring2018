@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions.Comparers;
 [CreateAssetMenu]
-public class FloatConstant : ScriptableObject {
+public class FloatConstant : InputBase { 
 
 	public float FloatValue = 0;
 
