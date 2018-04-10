@@ -5,10 +5,11 @@ using UnityEngine;
 public class Trigger : MonoBehaviour {
 
 	public PowerUp PowerUp;
+	public PlayerMovement PlayerMovement;
 
 	private void OnTriggerEnter(Collider obj)
 	{
-		obj.GetComponent<MoveCharacter>().Movement = PowerUp.MovePattern;
+		obj.GetComponent<PlayerMovement>().Movement = PowerUp.MovePattern;
+		Destroy(gameObject);
 	}
-
 }

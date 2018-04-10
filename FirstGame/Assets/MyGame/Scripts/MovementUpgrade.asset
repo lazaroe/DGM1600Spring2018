@@ -11,9 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62e0dfb90506c14c8d2cd0c737d6d18, type: 3}
   m_Name: Movement
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 500
   jumpSpeed: 20
   gravity: 15
-  InputX: {fileID: 0}
-  InputY: {fileID: 11400000, guid: 718c2d7f40de87049b0880975b405038, type: 2}
-  InputZ: {fileID: 11400000, guid: 718c2d7f40de87049b0880975b405038, type: 2}
+  secondJumpAvil: 0

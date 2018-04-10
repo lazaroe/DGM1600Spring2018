@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour {
        
             
         }
-            if (!controller.isGrounded)
+            else
             {
             moveDirection.x = Input.GetAxis("Horizontal");
 			moveDirection.z = 0;
