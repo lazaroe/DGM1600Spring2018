@@ -4,45 +4,56 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
     
-       public Text countText;
+    public Text countText;
     public Text winText;
 
     private Rigidbody rb;
     private int count;
 
-   public float speed = 6.0F;
-    public float jumpSpeed = 8.0F;
-    public float gravity = 20.0F;
+ 	private CharacterController controller;
     private Vector3 moveDirection = Vector3.zero;
-    void Update() {
-        CharacterController controller = GetComponent<CharacterController>();
-        if (controller.isGrounded) {
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection *= speed;
-            if (Input.GetButton("Jump"))
-                moveDirection.y = jumpSpeed;
-            
-        }
-        moveDirection.y -= gravity * Time.deltaTime;
-        controller.Move(moveDirection * Time.deltaTime);
-    }
-    void Start ()
-    {
-        rb = GetComponent<Rigidbody>();
+
+    public Movement Movement;
+
+	private void Start()
+	{
+		controller = GetComponent<CharacterController>();
+        
+        //my pick up countdown
+         rb = GetComponent<Rigidbody>();
         count = 0;
         SetCountText ();
         winText.text = "";
-    }
+	}
+    void Update() {
+      
+        if (controller.isGrounded) {
+			moveDirection.x = Input.GetAxis("Horizontal");
+			moveDirection.z = 0;
+			moveDirection.y = 0;
+			
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= Movement.speed;
 
-    void FixedUpdate ()
-    {
-        float moveHorizontal = Input.GetAxis ("Horizontal");
-        float moveVertical = 0;
+            if (Input.GetKey(KeyCode.Space))
+                moveDirection.y = Movement.jumpSpeed;
+       
+            
+        }
+            if (!controller.isGrounded)
+            {
+            moveDirection.x = Input.GetAxis("Horizontal");
+			moveDirection.z = 0;
+			moveDirection.y = 0;
+			
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= Movement.speed;
 
-        Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
-
-        rb.AddForce (movement * speed);
+            if (Input.GetKey(KeyCode.Space))
+            moveDirection.y = Movement.jumpSpeed; 
+            }
+        moveDirection.y -= Movement.gravity * Time.deltaTime;
+        controller.Move(moveDirection * Time.deltaTime);
     }
 
     void OnTriggerEnter(Collider other) 
@@ -54,7 +65,7 @@ public class PlayerMovement : MonoBehaviour {
             SetCountText ();
         }
     }
-
+//number needed to win
     void SetCountText ()
     {
         countText.text = "Count: " + count.ToString ();
@@ -63,4 +74,5 @@ public class PlayerMovement : MonoBehaviour {
             winText.text = "You Win!";
         }
     }
+    
 }

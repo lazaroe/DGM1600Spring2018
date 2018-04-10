@@ -12,7 +12,7 @@ public class MoveCharacter : MonoBehaviour {
 		controller = GetComponent<CharacterController>();
 	}
     void Update() {
-      Movement.Move(controller, transform);
+      //Movement.Move(controller, transform);
         
     }
 }
