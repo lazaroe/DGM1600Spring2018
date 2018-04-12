@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Trigger : MonoBehaviour {
-
 	public PowerUp PowerUp;
 	public PlayerMovement PlayerMovement;
 
@@ -12,4 +11,5 @@ public class Trigger : MonoBehaviour {
 		obj.GetComponent<PlayerMovement>().Movement = PowerUp.MovePattern;
 		Destroy(gameObject);
 	}
+	
 }
