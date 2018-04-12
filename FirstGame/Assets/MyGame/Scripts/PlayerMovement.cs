@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour {
     public Text countText;
     public Text winText;
 
+    public Text Death;
+
     private Rigidbody rb;
     private int count;
 
@@ -73,6 +75,6 @@ public class PlayerMovement : MonoBehaviour {
         {
             winText.text = "You Win!";
         }
+        
     }
-    
 }
