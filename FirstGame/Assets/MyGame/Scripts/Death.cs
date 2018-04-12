@@ -15,8 +15,10 @@ void OnTriggerEnter (Collider other) {
 	if (other.CompareTag("Player"))
 		{
 			Destroy (other.gameObject);
-			Destroy (gameObject);
+		}
+	if (other.CompareTag("Ground"))
+		{
+		Destroy (gameObject);
 		}
 	}
-	
 }
