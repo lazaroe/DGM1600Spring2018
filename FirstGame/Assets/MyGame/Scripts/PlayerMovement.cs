@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour {
     void SetCountText ()
     {
         countText.text = "Count: " + count.ToString ();
-        if (count >= 1)
+        if (count >= 8)
         {
             winText.text = "You Win!";
         }
