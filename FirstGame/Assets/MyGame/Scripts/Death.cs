@@ -17,5 +17,9 @@ void OnTriggerEnter (Collider other) {
 			Destroy (other.gameObject);
 			Destroy (gameObject);
 		}
+	if (other.CompareTag("Ground"))
+		{
+			Destroy (gameObject);
+		}
 	}
 }
