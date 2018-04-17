@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/My 3DPlatformer.unity
+    guid: e961b0827b0b41342bbfa424ec9ac9ef
