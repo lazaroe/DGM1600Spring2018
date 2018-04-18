@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Death : MonoBehaviour {
-
-	 public int movespeed = 1;
- public Vector3 userDirection = Vector3.right;
-
- public int Difficulty = 3;
+public int movespeed = 1;
+public Vector3 userDirection = Vector3.right;
+public int Difficulty = 3;
     
     
     void Level()

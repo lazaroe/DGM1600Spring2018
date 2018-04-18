@@ -11,16 +11,27 @@ public class Rotate : MonoBehaviour {
         
         for(int i = 0; i < players.Length; i++)
         {
-           print("Player Number "+i+" is named "+players[i].name);
+           print("Player component "+i+" is named "+players[i].name);
+        }
+     string[] strings = new string[3];
+        
+        strings[0] = "Dont get hit by the fireballs!";
+        strings[1] = "Secret passage through the troches!";
+        strings[2] = "Speed boost is found at the bottom of the map";
+        
+        foreach(string item in strings)
+        {
+            print (item);
         }
     }
-  public class EnumScript : MonoBehaviour 
-{
-    enum TurnSpeed {A,D};
-    void Update()
+    public enum Direction {A, D};
+     Direction ReverseDirection (Direction dir)
     {
+        if(dir == Direction.A)
+            dir = Direction.D;
+        else if(dir == Direction.D)
+            dir = Direction.A;
         
+        return dir;     
     }
-
-}
 }
