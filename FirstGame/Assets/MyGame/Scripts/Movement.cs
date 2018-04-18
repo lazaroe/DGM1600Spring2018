@@ -8,6 +8,4 @@ public class Movement : ScriptableObject {
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
     public bool secondJumpAvil = false;
-
-
 }

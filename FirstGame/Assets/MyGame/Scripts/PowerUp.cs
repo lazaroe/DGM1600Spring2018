@@ -7,4 +7,9 @@ using UnityEngine;
 public class PowerUp : ScriptableObject {
 
 	public int PowerLevel;
+	public Movement MovePatternTransfer;
+	public Movement Transfer()
+	{
+		return MovePatternTransfer;
+	}
 }

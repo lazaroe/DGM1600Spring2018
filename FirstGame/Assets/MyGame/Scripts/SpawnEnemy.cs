@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour {
-
-     public int ufoSpeed;
      public float Timer = 2;
      public GameObject clone;
      GameObject Clone;

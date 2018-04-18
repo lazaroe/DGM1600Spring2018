@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class MoveCharacter : MonoBehaviour {
 
-    public Movement Movement;
+    public PlayerMovement PlayerMovement;
 	private CharacterController controller;
 	private void Start()
 	{
 		controller = GetComponent<CharacterController>();
 	}
-    void Update() {
-      //Movement.Move(controller, transform);
+   // void Update() {
+    //  PlayerMovement.Move (controller, transform);
         
-    }
+   // }
 }
 
 //methods have paranthesis while methods do not

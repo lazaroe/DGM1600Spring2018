@@ -14,4 +14,4 @@ MonoBehaviour:
   speed: 20
   jumpSpeed: 20
   gravity: 300
-  secondJumpAvil: 1
+  secondJumpAvil: 0

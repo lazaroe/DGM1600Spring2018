@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: PowerUp
   m_EditorClassIdentifier: 
   PowerLevel: 1
-  MovePattern: {fileID: 11400000, guid: 3290c766275a793458511b2be6172fe7, type: 2}
+  MovePatternTransfer: {fileID: 11400000, guid: 3290c766275a793458511b2be6172fe7,
+    type: 2}
