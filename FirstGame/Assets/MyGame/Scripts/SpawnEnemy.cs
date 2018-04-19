@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnEnemy : MonoBehaviour {
      public float Timer = 2;
      public GameObject clone;
+     int Enemies = 1;
      GameObject Clone;
 
      private Transform ObjectLocation;
@@ -16,6 +17,12 @@ public class SpawnEnemy : MonoBehaviour {
          Clone = Instantiate(clone, ObjectLocation) as GameObject;
          Timer = 2f;
      }
- 	}
+        for(int l = 0; l < Enemies;)
+        {
+            print ("Cloning Enemy"); 
+        }
+    }
 }
 //Clone = Instantiate(clone, new Vector3(Random.Range(-9, 9), 5f, 0f), transform.rotation) as GameObject;
+//used a tutorial
+//forloops

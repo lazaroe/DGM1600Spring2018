@@ -64,3 +64,6 @@ public class PlayerCamera : MonoBehaviour {
             }
         }
     }
+
+    //return
+    //I used a tutorial to get the camera working (Brakeys tutorial)

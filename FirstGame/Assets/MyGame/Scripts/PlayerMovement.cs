@@ -6,18 +6,19 @@ public class PlayerMovement : MonoBehaviour {
     
     public Text countText;
     public Text winText;
-
-    public Text Death;
+    public Text gameOver;
 
     private Rigidbody rb;
     private int count;
 
  	private CharacterController controller;
     private Vector3 moveDirection = Vector3.zero;
-
+    int NinjaStarsPickedUp = 1;
     public Movement Movement;
 
-	private void Start()
+    public bool GameObject { get; private set; }
+
+    private void Start()
 	{
         
 		controller = GetComponent<CharacterController>();
@@ -57,6 +58,7 @@ public class PlayerMovement : MonoBehaviour {
             }
         moveDirection.y -= Movement.gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
+        
     }
 
     void OnTriggerEnter(Collider other) 
@@ -67,7 +69,13 @@ public class PlayerMovement : MonoBehaviour {
             count = count + 1;
             SetCountText ();
         }
+        while(NinjaStarsPickedUp > 0)
+        {
+            Debug.Log ("NinjaStarPickedUP");
+            NinjaStarsPickedUp--;
+        }
     }
+    
 //number needed to win
     void SetCountText ()
     {
@@ -79,3 +87,7 @@ public class PlayerMovement : MonoBehaviour {
         
     }
 }
+
+//Whileloops
+//elseclause
+//scopeandaccessmodefiers
