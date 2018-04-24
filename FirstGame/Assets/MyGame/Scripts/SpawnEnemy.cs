@@ -9,6 +9,14 @@ public class SpawnEnemy : MonoBehaviour {
      GameObject Clone;
 
      private Transform ObjectLocation;
+
+     void Start()
+     {
+         for(int l = 0; l < Enemies;l++)
+        {
+            print ("Cloning Enemy" + 1); 
+        }
+     }
      void Update()
  	{
      Timer -= Time.deltaTime;
@@ -17,10 +25,6 @@ public class SpawnEnemy : MonoBehaviour {
          Clone = Instantiate(clone, ObjectLocation) as GameObject;
          Timer = 2f;
      }
-        for(int l = 0; l < Enemies;)
-        {
-            print ("Cloning Enemy"); 
-        }
     }
 }
 //Clone = Instantiate(clone, new Vector3(Random.Range(-9, 9), 5f, 0f), transform.rotation) as GameObject;
