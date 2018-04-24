@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: PowerDown
   m_EditorClassIdentifier: 
   PowerLevel: 0
-  MovePatternTransfer: {fileID: 0}
+  MovePatternTransfer: {fileID: 11400000, guid: ecd517c9784a27c4fa081c5952244016,
+    type: 2}

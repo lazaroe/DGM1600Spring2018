@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b62e0dfb90506c14c8d2cd0c737d6d18, type: 3}
-  m_Name: PowerDown
+  m_Name: MovementDown
   m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 8
-  gravity: 20
+  speed: 5
+  jumpSpeed: 15
+  gravity: 15
   secondJumpAvil: 0
