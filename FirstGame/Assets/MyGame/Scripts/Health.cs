@@ -15,11 +15,11 @@ public class Health : MonoBehaviour {
     public void OnTriggerEnter(Collider obj)
     {
         
-        if (HealthBar.fillAmount <= 0F)
+        if (HealthBar.fillAmount > 0F)
         {
-             gameObject.SetActive(false);
+            PowerLevel = AddPowerLevel();
         }
-       
+        gameObject.SetActive(false);
     }
 
 
