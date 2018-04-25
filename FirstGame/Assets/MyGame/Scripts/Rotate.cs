@@ -4,15 +4,10 @@ using UnityEngine;
 public class Rotate : MonoBehaviour {
 
    public GameObject[] players;
-
     void Start ()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
         
-        for(int i = 0; i < players.Length; i++)
-        {
-           print("Player component "+i+" is named "+players[i].name);
-        }
      string[] strings = new string[3];
         
         strings[0] = "Dont get hit by the fireballs!";
@@ -37,5 +32,5 @@ public class Rotate : MonoBehaviour {
 }
 
 //Arrays
-//ForEach
 //Enumerators
+//foreach
