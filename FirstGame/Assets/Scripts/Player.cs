@@ -10,4 +10,6 @@ public class Player : ScriptableObject {
 	public int Score;
 	public int MPs;
     internal int Health;
+
+    public PlayerMovement PlayerMovement { get; internal set; }
 }
