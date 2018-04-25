@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerOne: {fileID: 0}
-  Movement: {fileID: 11400000, guid: ecd517c9784a27c4fa081c5952244016, type: 2}
+  Movement: {fileID: 0}
 --- !u!114 &114726134429099676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerOne: {fileID: 11400000, guid: 867eeb36856fe734f828d004dc248534, type: 2}
-  Movement: {fileID: 11400000, guid: ecd517c9784a27c4fa081c5952244016, type: 2}
+  Movement: {fileID: 11400000, guid: 946ed97e3a79b9045afc12a03ec9e2d9, type: 2}
 --- !u!114 &114808608238669306
 MonoBehaviour:
   m_ObjectHideFlags: 1
