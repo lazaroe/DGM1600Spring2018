@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour{
-    public AudioClip sound;
+    public AudioSource Audio;
     int SoundLoudness = 1;
 
      void Start()
      {
-         for(int l = 0; l < SoundLoudness;l++)
-        {
-            
-        }
+         Audio = GetComponent<AudioSource> ();
+         while (CompareTag("Player") ==  true)
+         {
+             Audio.Play ();
+             break;
+         }
      }
 }
 
+//while
