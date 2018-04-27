@@ -188,6 +188,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629d8cc33c400fd41b6f4610c71867f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fireballs: []
+  Fire: {fileID: 0}
+  movespeed: 1
   userDirection: {x: 0, y: 5, z: 0}
 --- !u!135 &135681656178877932
 SphereCollider:

@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour {
     int NinjaStarsPickedUp = 1;
     public Movement Movement;
 
+
     public bool GameObject { get; private set; }
 
     private void Start()
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour {
         count = 0;
         SetCountText ();
         winText.text = "";
+        
 	}
     void Update() {
       
@@ -60,7 +62,7 @@ public class PlayerMovement : MonoBehaviour {
         controller.Move(moveDirection * Time.deltaTime);
         
     }
-
+    //what keeps track of the score + particle spawning
     void OnTriggerEnter(Collider other) 
     {
         if (other.gameObject.CompareTag ( "Pick Up"))
@@ -68,14 +70,9 @@ public class PlayerMovement : MonoBehaviour {
             other.gameObject.SetActive (false);
             count = count + 1;
             SetCountText ();
-        }
-        while(NinjaStarsPickedUp > 0)
-        {
-            Debug.Log ("NinjaStarPickedUP");
-            NinjaStarsPickedUp--;
+           
         }
     }
-    
 //number needed to win
     void SetCountText ()
     {
@@ -88,6 +85,5 @@ public class PlayerMovement : MonoBehaviour {
     }
 }
 
-//Whileloops
 //elseclause
 //scopeandaccessmodefiers

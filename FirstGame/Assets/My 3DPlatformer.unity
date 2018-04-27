@@ -772,7 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db1afa4aa82cb74a93702bc328a3f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: bfc37ab28586ce6498b011fefad6a078, type: 3}
+  Audio: {fileID: 0}
 --- !u!82 &86262811
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6879,6 +6879,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629d8cc33c400fd41b6f4610c71867f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fireballs: []
+  Fire: {fileID: 0}
   movespeed: 1
   userDirection: {x: 1, y: 0, z: 0}
 --- !u!1001 &517736833
@@ -10738,6 +10740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629d8cc33c400fd41b6f4610c71867f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fireballs: []
+  Fire: {fileID: 0}
   movespeed: 1
   userDirection: {x: 0, y: 0, z: 0}
 --- !u!65 &563772039
@@ -11383,6 +11387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629d8cc33c400fd41b6f4610c71867f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fireballs: []
+  Fire: {fileID: 0}
   movespeed: 1
   userDirection: {x: 0, y: 0, z: 0}
 --- !u!65 &639784086
@@ -11423,6 +11429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629d8cc33c400fd41b6f4610c71867f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fireballs: []
+  Fire: {fileID: 0}
   movespeed: 1
   userDirection: {x: 0, y: 0, z: 0}
 --- !u!65 &657244407
@@ -20818,6 +20826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629d8cc33c400fd41b6f4610c71867f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fireballs: []
+  Fire: {fileID: 0}
   movespeed: 1
   userDirection: {x: 0, y: 0, z: 0}
 --- !u!65 &1097829648
@@ -28359,6 +28369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629d8cc33c400fd41b6f4610c71867f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fireballs: []
+  Fire: {fileID: 0}
   movespeed: 1
   userDirection: {x: 0, y: 0, z: 0}
 --- !u!65 &1741778138
@@ -33277,6 +33289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629d8cc33c400fd41b6f4610c71867f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fireballs: []
+  Fire: {fileID: 0}
   movespeed: 1
   userDirection: {x: 0, y: 0, z: 0}
 --- !u!65 &2044899627
