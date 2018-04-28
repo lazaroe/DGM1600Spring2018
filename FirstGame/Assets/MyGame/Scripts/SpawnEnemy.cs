@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour {
-
+    
     public class enemy1{
-        public int enemy = 1;
+        public float enemy = 1;
         public enemy1 (int enm)
         {
             enemy = enm;
@@ -13,7 +13,7 @@ public class SpawnEnemy : MonoBehaviour {
     }
      public float Timer = 2;
      public GameObject clone;
-     int Enemies = 1;
+     float Enemies = 1;
      GameObject Clone;
 
      private Transform ObjectLocation;
@@ -23,11 +23,12 @@ public class SpawnEnemy : MonoBehaviour {
      Timer -= Time.deltaTime;
      if (Timer <= 0f)
      {
-          for(int l = 0; l < Enemies;l++)
+          for(float l = 0; l < Enemies;l++)
         {
         Clone = Instantiate(clone, ObjectLocation) as GameObject;
         Timer = 2f;
         }
+        
         
      }
         
@@ -36,3 +37,4 @@ public class SpawnEnemy : MonoBehaviour {
 //Clone = Instantiate(clone, new Vector3(Random.Range(-9, 9), 5f, 0f), transform.rotation) as GameObject;
 //used a tutorial
 //forloops
+//float
