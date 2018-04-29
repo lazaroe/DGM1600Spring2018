@@ -4,9 +4,15 @@
  public class Restart : MonoBehaviour
  {
    public int Difficulty = 3;
-    
-    
-    void Level()
+
+   void Update ()
+   {
+     if( Input.GetKeyDown(KeyCode.R) )
+     {
+         SceneManager.LoadScene( SceneManager.GetActiveScene().name );
+     }
+   }
+     void Level()
     {
         switch (Difficulty)
         {
@@ -24,13 +30,6 @@
             break;
         }
     }
-   void Update ()
-   {
-     if( Input.GetKeyDown(KeyCode.R) )
-     {
-       SceneManager.LoadScene( SceneManager.GetActiveScene().name );
-     }
-   }
  }
  //switchStatements
  //ifstatment

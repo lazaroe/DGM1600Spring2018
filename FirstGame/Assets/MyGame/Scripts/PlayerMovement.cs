@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour {
         SetCountText ();
         winText.text = "";
         
+        //this is my movement
 	}
     void Update() {
       
@@ -73,7 +74,7 @@ public class PlayerMovement : MonoBehaviour {
            
         }
     }
-//number needed to win
+    //number needed to win
     void SetCountText ()
     {
         countText.text = "Count: " + count.ToString ();

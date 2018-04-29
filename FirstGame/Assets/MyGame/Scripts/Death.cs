@@ -17,8 +17,8 @@ void OnTriggerEnter (Collider other) {
 
 	if (other.CompareTag("Player"))
 		{
-        other.gameObject.SetActive(false);
-        Destroy (gameObject);
+        	other.gameObject.SetActive(false);
+        	Destroy (gameObject);
 		}
 	foreach (GameObject Fireballs in Fireballs)
 	{

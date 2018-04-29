@@ -26,8 +26,8 @@ public class SpawnEnemy : MonoBehaviour {
      {
           for(float l = 0; l < Enemies;l++)
         {
-        Clone = Instantiate(clone, ObjectLocation) as GameObject;
-        Timer = 2f;
+            Clone = Instantiate(clone, ObjectLocation) as GameObject;
+            Timer = 2f;
         }  
      }
      }
