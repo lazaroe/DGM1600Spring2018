@@ -88,3 +88,4 @@ public class PlayerMovement : MonoBehaviour {
 
 //elseclause
 //scopeandaccessmodefiers
+//function with parameters
